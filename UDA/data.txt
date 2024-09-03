@@ -1,0 +1,95 @@
+INFO:albumentations.check_version:A new version of Albumentations is available: 1.4.14 (you have 1.4.11). Upgrade using: pip install --upgrade albumentations
+
+Creating and checking datasets...
+
+--- Source (Train) Dataset Statistics ---
+Total number of samples: 214409
+Number of classes: 25
+First 5 rows of the dataframe:
+          individual                taxon       species  ...      2      3    4
+100  Ameletus_ino100  Ameletus_inopinatus  Ameletus_ino  ...  train  train  val
+101  Ameletus_ino100  Ameletus_inopinatus  Ameletus_ino  ...  train  train  val
+102  Ameletus_ino100  Ameletus_inopinatus  Ameletus_ino  ...  train  train  val
+103  Ameletus_ino100  Ameletus_inopinatus  Ameletus_ino  ...  train  train  val
+104  Ameletus_ino100  Ameletus_inopinatus  Ameletus_ino  ...  train  train  val
+
+[5 rows x 12 columns]
+
+Sample image shape: torch.Size([3, 224, 224])
+Sample label: tensor(0)
+
+--- Source (Validation) Dataset Statistics ---
+Total number of samples: 53335
+Number of classes: 25
+First 5 rows of the dataframe:
+        individual                taxon       species  ...      2     3      4
+50  Ameletus_ino10  Ameletus_inopinatus  Ameletus_ino  ...  train  test  train
+51  Ameletus_ino10  Ameletus_inopinatus  Ameletus_ino  ...  train  test  train
+52  Ameletus_ino10  Ameletus_inopinatus  Ameletus_ino  ...  train  test  train
+53  Ameletus_ino10  Ameletus_inopinatus  Ameletus_ino  ...  train  test  train
+54  Ameletus_ino10  Ameletus_inopinatus  Ameletus_ino  ...  train  test  train
+
+[5 rows x 12 columns]
+
+Sample image shape: torch.Size([3, 224, 224])
+Sample label: tensor(0)
+
+--- Target (Train) Dataset Statistics ---
+Total number of samples: 4281
+Number of classes: 25
+First 5 rows of the dataframe:
+                 taxon  im_num_true        img  ...      3      4 label
+4  Ameletus_inopinatus          100  100_r.png  ...  train  train     0
+5  Ameletus_inopinatus          100  100_l.png  ...  train  train     0
+6  Ameletus_inopinatus          101  101_r.png  ...  train  train     0
+7  Ameletus_inopinatus          101  101_l.png  ...  train  train     0
+8  Ameletus_inopinatus          102  102_l.png  ...    val  train     0
+
+[5 rows x 10 columns]
+
+Sample image shape: torch.Size([3, 224, 224])
+Sample label: tensor(0)
+
+--- Target (Test) Dataset Statistics ---
+Total number of samples: 1072
+Number of classes: 24
+First 5 rows of the dataframe:
+                  taxon  im_num_true        img  ...      3      4 label
+2   Ameletus_inopinatus           10   10_l.png  ...   test  train     0
+3   Ameletus_inopinatus           10   10_r.png  ...   test  train     0
+18  Ameletus_inopinatus           11   11_l.png  ...  train  train     0
+19  Ameletus_inopinatus           11   11_r.png  ...  train  train     0
+31  Ameletus_inopinatus          117  117_l.png  ...   test  train     0
+
+[5 rows x 10 columns]
+
+Sample image shape: torch.Size([3, 224, 224])
+Sample label: tensor(0)
+
+Checking data loaders...
+
+Source (Train) Loader:
+Batch size: 32
+Image shape: torch.Size([32, 3, 224, 224])
+Label shape: torch.Size([32])
+First few labels in batch: tensor([16,  5, 24, 10,  2])
+
+Source (Validation) Loader:
+Batch size: 32
+Image shape: torch.Size([32, 3, 224, 224])
+Label shape: torch.Size([32])
+First few labels in batch: tensor([0, 0, 0, 0, 0])
+
+Target (Train) Loader:
+Batch size: 32
+Image shape: torch.Size([32, 3, 224, 224])
+Label shape: torch.Size([32])
+First few labels in batch: tensor([ 9,  0, 14,  6, 17])
+
+Target (Test) Loader:
+Batch size: 32
+Image shape: torch.Size([32, 3, 224, 224])
+Label shape: torch.Size([32])
+First few labels in batch: tensor([0, 0, 0, 0, 0])
+
+Data loading and preprocessing completed successfully!

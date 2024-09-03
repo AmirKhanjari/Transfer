@@ -1,0 +1,20 @@
+INFO:albumentations.check_version:A new version of Albumentations is available: 1.4.14 (you have 1.4.11). Upgrade using: pip install --upgrade albumentations
+Namespace(seed=1, num_workers=40, backbone='resnet18', use_bottleneck=True, batch_size=64, n_epoch=20, early_stop=0, epoch_based_training=False, n_iter_per_epoch=50, lr=0.01, momentum=0.9, weight_decay=0.001, lr_gamma=0.001, lr_decay=0.75, lr_scheduler=True, transfer_loss_weight=1.0, transfer_loss='adv', device=device(type='cuda'))
+/PUHTI_TYKKY_HxdcU08/miniconda/envs/env1/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/PUHTI_TYKKY_HxdcU08/miniconda/envs/env1/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Epoch: [ 1/20], cls_loss: 2.9604, transfer_loss: 0.6999, total_Loss: 3.6603, test_loss 3.245863, test_acc: 7.3694
+Epoch: [ 2/20], cls_loss: 2.6958, transfer_loss: 0.6945, total_Loss: 3.3903, test_loss 3.340850, test_acc: 7.6493
+Epoch: [ 3/20], cls_loss: 2.4295, transfer_loss: 0.6921, total_Loss: 3.1217, test_loss 3.327964, test_acc: 12.7799
+Epoch: [ 4/20], cls_loss: 2.1867, transfer_loss: 0.6883, total_Loss: 2.8750, test_loss 3.713437, test_acc: 12.7799
+Epoch: [ 5/20], cls_loss: 2.0366, transfer_loss: 0.6837, total_Loss: 2.7203, test_loss 3.561643, test_acc: 17.8172
+Epoch: [ 6/20], cls_loss: 1.9633, transfer_loss: 0.6779, total_Loss: 2.6411, test_loss 3.566796, test_acc: 21.6418
+Epoch: [ 7/20], cls_loss: 1.8839, transfer_loss: 0.6662, total_Loss: 2.5501, test_loss 3.601012, test_acc: 20.7090
+Epoch: [ 8/20], cls_loss: 1.7475, transfer_loss: 0.6534, total_Loss: 2.4008, test_loss 3.547868, test_acc: 23.0410
+Epoch: [ 9/20], cls_loss: 1.7385, transfer_loss: 0.6424, total_Loss: 2.3809, test_loss 3.530523, test_acc: 24.5336
+Epoch: [10/20], cls_loss: 1.6568, transfer_loss: 0.6240, total_Loss: 2.2808, test_loss 3.829490, test_acc: 20.9888
+Epoch: [11/20], cls_loss: 1.6677, transfer_loss: 0.6176, total_Loss: 2.2853, test_loss 3.904614, test_acc: 24.4403
+Epoch: [12/20], cls_loss: 1.5872, transfer_loss: 0.5955, total_Loss: 2.1827, test_loss 4.000524, test_acc: 20.0560
+Epoch: [13/20], cls_loss: 1.5695, transfer_loss: 0.5955, total_Loss: 2.1650, test_loss 3.975574, test_acc: 23.5075
+slurmstepd: error: *** JOB 23019280 ON r02g01 CANCELLED AT 2024-09-03T13:59:34 DUE TO TIME LIMIT ***
