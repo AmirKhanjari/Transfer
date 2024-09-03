@@ -1,0 +1,66 @@
+# Ignore all hidden files and folders
+.*
+
+# Ignore specific folders
+taxnomist/
+Mine/
+Saved_Models/
+tb_logs/
+Tykky/
+tests/
+conf/
+DDA/
+pytorch-domain-adaptation/
+.git/
+# Ignore specific file types
+*.png
+*.txt
+*.ckpt
+*.csv
+*.pth
+*.ipynb
+*.yaml
+*.git
+
+# Ignore TensorBoard files
+events.out.tfevents.*
+
+# Ignore packages and dependencies
+node_modules/
+venv/
+**pycache**/
+*.pyc
+
+# Ignore common OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore build and distribution directories
+dist/
+build/
+*.egg-info/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore data files (modify as needed)
+data/
+*.dat
+*.npy
+
+# Exceptions: Do not ignore .gitignore file
+!.gitignore
+
+# Add any other exceptions here, e.g.:
+# !.github/  # if you want to track GitHub-specific files
